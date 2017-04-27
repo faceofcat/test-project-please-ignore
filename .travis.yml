@@ -13,5 +13,7 @@ deploy:
   file:
     - dist/test-dist.zip
     - dist/test-sources.zip
+  skip_cleanup: true
   on:
     repo: faceofcat/test-project-please-ignore
+    tags: true
