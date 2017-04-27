@@ -1,19 +1,17 @@
 sudo: false
 language: node_js
 node_js:
-  - node
+- node
 before_script:
-  - npm install -g gulp
-  - npm install
+- npm install -g gulp
+- npm install
 script: gulp
 deploy:
   provider: releases
   api_key:
-    secure:
+    secure: YYPZOwlqO34qZKU3YnsArIE0+/8zNPTCHTR0ioE3nNnA+hZ6yzaUKtR5HZ+O5XuLVumeOK8YHnAzXRSg+ZxXlO2O+iv9QYdTmPihj5dGnZBwKvT3Cq6snO2c45aKyjFVusFCfwOs577QIZe51PLmg3g9HjaD8YMlzlCxVOz6CDhfIFczfzWlBmdCF9nbNLylR5gVBlmtZoWBy2l4zqanTC2NKpwfytOt9y99Uqp5DR/5hxR3p6XV99gVqv9U1qZw9fgJWaZAsyAYPZCxrXY1FSQq82wWo0m3MZ0YIVrYCoROpsZaK/3iUL8J98U8q93rTq6Xxy72UQAh993wVikUY8nGd8DHT5xWkwDW98De+4EMEV2BCwu4rLPoiEl7Nm5qxZRNa23O0TTqzFN85Amx5FSzESy0SVLmcTeYGoby6M8MilxZQOmFQdB0GIKbnw9psTjTb3tj8ii+gVZOGpH6NpHgdrQGJoDhk2bUG49uXIDxsAqV/gZwM6W0Yzvjsider+zI6Mty0uYI142l0odDofTkUW9pYmcHt/wopslp5Xu5FE3q5v/AVrhmFWPHHuXKa7k9zI09qtkJuosAZ4OfFesZRt7BurksTbbitQfduZ1GqOl5qmTNcOPxxlidgEDwxjiBbhHbB8oY0ZK8jLSibRDR1HdZEBvJa2U+VGEL/5g=
   file:
     - dist/test-dist.zip
-    - dist/test-source.zip
-  skip_cleanup: true
+    - dist/test-sources.zip
   on:
-    repo: test-project-please-ignore
-    tags: true
+    repo: faceofcat/test-project-please-ignore
