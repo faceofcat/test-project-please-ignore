@@ -15,5 +15,5 @@ deploy:
     - dist/test-source.zip
   skip_cleanup: true
   on:
-    repo: https://github.com/faceofcat/test-project-please-ignore.git
+    repo: test-project-please-ignore
     tags: true
