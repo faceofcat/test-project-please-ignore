@@ -1,0 +1,28 @@
+{
+  "name": "test-project-please-ignore",
+  "version": "1.0.0",
+  "description": "just a project to test github's integrations with other things",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faceofcat/test-project-please-ignore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faceofcat/test-project-please-ignore/issues"
+  },
+  "homepage": "https://github.com/faceofcat/test-project-please-ignore#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "0.0.15",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-typescript": "^3.1.6",
+    "gulp-zip": "^4.0.0",
+    "merge2": "^1.0.3",
+    "typescript": "^2.2.2"
+  }
+}

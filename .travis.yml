@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+node_js:
+  - node
+before_script:
+  - npm install -g gulp
+  - npm install
+script: gulp
+deploy:
+  provider: releases
+  api_key:
+    secure:
+  file:
+    - dist/test-dist.zip
+    - dist/test-source.zip
+  skip_cleanup: true
+  on:
+    repo: https://github.com/faceofcat/test-project-please-ignore.git
+    tags: true
